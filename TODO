@@ -1,0 +1,18 @@
+Complete
+========
+
+ * Connecting to the server
+ * Selecting a database
+ * Executing straight text
+ * Quote and flatten parameters
+ * Returning data
+
+Partially Complete
+==================
+
+ * Stored Procedures
+
+Incomplete
+==========
+
+ * Inserting binary data

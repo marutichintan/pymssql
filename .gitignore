@@ -1,0 +1,10 @@
+build
+*.c
+*.so
+tests/tests.cfg
+*.venv
+*.pyc
+.tox
+dist
+*.egg
+*.egg-info
