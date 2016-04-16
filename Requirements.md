@@ -1,0 +1,8 @@
+### Runtime Requirements ###
+In order to run pymssql, you need the following:
+
+  * Python language. Please check [Platforms](Platforms.md) page for version info.
+  * Linux, `*`nix and Mac OS X: [FreeTDS](http://www.freetds.org/) 0.63 or newer. Your OS may have a package for that, example names are `libfreetds0`, `lib64freetds0`, `freetds0`. On FreeBSD there is a port `databases/freetds-msdblib`. _NOTE: FreeTDS must be configured with `--enable-msdblib` to return correct dates! Please see [FreeTDS and Dates](FreeTDSAndDates.md) document for details_.
+  * NOTE: pymssql doesn't invalidate the requirement for an SQL Client Access Licence for every host you want to run it on, be it Windows or `*`nix, if your SQL Server is licenced per user or per device connected.
+
+_More info: pymssql on Windows is equipped with ntwdblib.dll library version 2000.80.2187.0 which is distributed by Microsoft in SQL 2000 SP4 package. This is not the newest available version, but there was a problem with newest version 2000.80.2273.0. This library is redistributable -- see REDIST.txt on the SQL Server 2000 installation media, in SQL Server 2000 SP4 installation package, or [here](http://pymssql.googlecode.com/files/REDIST.txt) (it is copied to keep these rights to hand). You don't have to install full MS SQL Client Tools package unless you need to use advanced client configuration tools available there, for example Client Network Utility._
